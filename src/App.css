@@ -1,3 +1,28 @@
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.App > main {
+  flex: 1;
+}
+
+.App > footer {
+  display: flex;
+  background-color: gray;
+  gap: 1rem;
+}
+
+.App > footer * {
+  margin: 0;
+  padding: 0;
+}
+
+.icon-pair {
+  display: flex;
+  gap: 0.5rem;
+}
+
 .margin {
   display: block;
   width: 90%;
@@ -7,7 +32,7 @@
 .tiled {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem 0.5rem;
+  gap: 1rem;
 }
 
 .icon {

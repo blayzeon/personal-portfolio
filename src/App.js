@@ -1,10 +1,11 @@
 import "./App.css";
 import Card from "./components/Card";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <div>
+      <header>
         <h2>Lorem Ipsum</h2>
         <div className="img"></div>
         <div>
@@ -13,9 +14,9 @@ function App() {
           inventore quasi dolorum magnam itaque ducimus, quod odio debitis
           placeat perspiciatis!
         </div>
-      </div>
+      </header>
 
-      <div className="margin">
+      <main className="margin">
         <h3>Title</h3>
         <div className="tiled">
           <Card title="sfsdfdgdssssgdfgdfg" />
@@ -31,31 +32,9 @@ function App() {
           <Card title="test8" text="mooooo" />
           <Card title="test9" text="chirp chirp" />
         </div>
-      </div>
+      </main>
 
-      <div>
-        <div>
-          <h3>Contact Me</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sequi
-            iusto similique fuga non quos repellendus dicta porro quasi, eum
-            fugit explicabo, expedita at illo voluptatum aliquid ullam.
-            Mollitia, provident?
-          </p>
-          <address>
-            1234 address dr <br /> address, address 12345
-          </address>
-          <div className="icon-pair">
-            <div className="icon"></div>
-            <a href="tel:123-555-1234">123-555-1234</a>
-          </div>
-          <div className="icon-pair">
-            <div className="icon"></div>
-            <a href="mailto:abc@example.com">abc@example.com</a>
-          </div>
-        </div>
-        <div></div>
-      </div>
+      <Footer />
     </div>
   );
 }
