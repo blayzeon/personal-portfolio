@@ -6,9 +6,9 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h2>Lorem Ipsum</h2>
-        <div className="img"></div>
-        <div>
+        <h1 className="">blayzeon</h1>
+        <div className="img z1"></div>
+        <div className="margin">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic libero
           sint asperiores saepe nemo minima! Eum aperiam possimus earum
           inventore quasi dolorum magnam itaque ducimus, quod odio debitis
@@ -17,7 +17,7 @@ function App() {
       </header>
 
       <main className="margin">
-        <h3>Title</h3>
+        <h2>Title</h2>
         <div className="tiled">
           <Card title="sfsdfdgdssssgdfgdfg" />
           <Card title="test2" />

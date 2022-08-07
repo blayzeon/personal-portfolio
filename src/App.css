@@ -18,6 +18,11 @@
   padding: 0;
 }
 
+.z1 {
+  position: absolute;
+  z-index: 1;
+}
+
 .icon-pair {
   display: flex;
   gap: 0.5rem;
