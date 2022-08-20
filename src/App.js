@@ -9,8 +9,8 @@ function App() {
         <div className="curved"></div>
         <div className="shadow">
           <div className="margin flex">
-            <div className="img">
-              <h1 className="subtext">blayzeon</h1>
+            <div className="portPic shadow">
+              <h1>blayzeon</h1>
             </div>
             <div className="blurb">
               <h2>About Me</h2>
