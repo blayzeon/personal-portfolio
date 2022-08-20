@@ -12,12 +12,12 @@ const socials = [
   {
     name: "linkedin",
     icon: "devicon-linkedin-plain",
-    url: "#",
+    url: "https://www.linkedin.com/in/kristineecarter/",
   },
   {
     name: "twitter",
     icon: "devicon-twitter-original",
-    url: "#",
+    url: "https://twitter.com/kaseith",
   },
 ];
 
@@ -26,16 +26,24 @@ const contact = [
   {
     name: "phone",
     span: "call",
-    url: "tel:123-555-6789",
-    content: "123-555-6789",
+    url: "tel:352-448-8481",
+    content: "352-448-8481",
   },
   {
     name: "email",
     span: "mail",
-    url: "mailto:noreply@no-email.com",
-    content: "noreply@no-email.com",
+    url: "mailto:blayzeon@gmail.com",
+    content: "blayzeon@gmail.com",
   },
 ];
+
+const address = {
+  city: "Gainesville",
+  state: "FL",
+  zip: "32641",
+};
+
+const blurb = "Will code for food. See below on how to get in touch:";
 
 const projects = [
   {
@@ -125,10 +133,16 @@ function App() {
             <div className="blurb">
               <h2>About Me</h2>
               <div>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
-                libero sint asperiores saepe nemo minima! Eum aperiam possimus
-                earum inventore quasi dolorum magnam itaque ducimus, quod odio
-                debitis placeat perspiciatis!
+                I'm an artist with a customer service and training background
+                that fell in love with programming after taking{" "}
+                <a href="https://www.edx.org/cs50" target="_blank">
+                  Harvard's CS50
+                </a>{" "}
+                during the pandemic. I've since been following{" "}
+                <a href="https://www.theodinproject.com/" target="_blank">
+                  The Odin Project
+                </a>{" "}
+                and plan to pursue a career in web development!
               </div>
             </div>
           </div>
@@ -146,6 +160,8 @@ function App() {
         img="https://media.giphy.com/media/VekcnHOwOI5So/giphy.gif"
         socials={socials}
         contact={contact}
+        address={address}
+        blurb={blurb}
       />
     </div>
   );
