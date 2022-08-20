@@ -6,14 +6,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1 className="">blayzeon</h1>
-        <div className="img z1"></div>
-        <div className="margin">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic libero
-          sint asperiores saepe nemo minima! Eum aperiam possimus earum
-          inventore quasi dolorum magnam itaque ducimus, quod odio debitis
-          placeat perspiciatis!
-        </div>
+        <div className="curved1"></div>
       </header>
 
       <main className="margin">
