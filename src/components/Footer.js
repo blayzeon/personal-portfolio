@@ -1,5 +1,6 @@
 import React from "react";
 import Address from "./Address";
+import Ul from "./Ul";
 
 export default function Footer(props) {
   const address = props.address
@@ -14,28 +15,24 @@ export default function Footer(props) {
   const blurb = props.blurb
     ? props.blurb
     : "Please get in touch if you think our work could be mutually beneficial!";
-  const phone = props.phone ? props.phone : "123-555-6789";
-  const phoneLink = `tel:${phone}`;
-  const email = props.email ? props.email : "noreply@no-email.com";
-  const emailLink = `mailto:${email}`;
-
   return (
-    <footer>
-      <div>
-        <h3>Contact Me</h3>
-        <p>{blurb}</p>
-      </div>
-      <Address address={address} />
-      <div>
-        <div className="icon-pair">
-          <div className="icon"></div>
-          <a href={phoneLink}>{phone}</a>
-        </div>
-        <div className="icon-pair">
-          <div className="icon"></div>
-          <a href={emailLink}>{email}</a>
-        </div>
-      </div>
+    <footer className="flex spaced">
+      <ul className="flex-list column large-gap">
+        <li>
+          <div>
+            <h3>Contact Me</h3>
+            <p>{blurb}</p>
+          </div>
+        </li>
+        <li>
+          <Address address={address} />
+        </li>
+        <li>
+          <Ul items={props.contact} direction="column" />
+        </li>
+        <Ul items={props.socials} />
+      </ul>
+      {props.img ? <img src={props.img} /> : null}
     </footer>
   );
 }

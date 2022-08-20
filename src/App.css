@@ -4,6 +4,19 @@
   --shadow: hsla(14, 20%, 13%, 0.8);
 }
 
+address {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  font-size: 1.5em;
+  color: black !important;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -63,12 +76,30 @@
   display: flex !important;
 }
 
+.spaced {
+  justify-content: space-between;
+}
+
+.flex-list {
+  display: flex;
+  list-style-type: none;
+  gap: 0.5rem;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.large-gap {
+  gap: 1rem;
+}
+
 .shadow {
   filter: drop-shadow(0 0 0.3em var(--shadow));
 }
 
 .App > footer {
-  display: flex;
+  padding: 4rem 2rem;
   background-color: var(--primary);
   gap: 1rem;
 }
@@ -76,6 +107,11 @@
 .App > footer * {
   margin: 0;
   padding: 0;
+  color: white;
+}
+
+.App > footer > img {
+  width: 30%;
 }
 
 .icon-pair {

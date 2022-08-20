@@ -2,6 +2,41 @@ import "./App.css";
 import Card from "./components/Card";
 import Footer from "./components/Footer";
 
+//  Social media icons require https://devicon.dev/
+const socials = [
+  {
+    name: "github",
+    icon: "devicon-github-original",
+    url: "https://github.com/blayzeon",
+  },
+  {
+    name: "linkedin",
+    icon: "devicon-linkedin-plain",
+    url: "#",
+  },
+  {
+    name: "twitter",
+    icon: "devicon-twitter-original",
+    url: "#",
+  },
+];
+
+// Phone and email icons require https://fonts.google.com/icons
+const contact = [
+  {
+    name: "phone",
+    span: "call",
+    url: "tel:123-555-6789",
+    content: "123-555-6789",
+  },
+  {
+    name: "email",
+    span: "mail",
+    url: "mailto:noreply@no-email.com",
+    content: "noreply@no-email.com",
+  },
+];
+
 function App() {
   return (
     <div className="App">
@@ -43,7 +78,11 @@ function App() {
         </div>
       </main>
 
-      <Footer />
+      <Footer
+        img="https://media.giphy.com/media/VekcnHOwOI5So/giphy.gif"
+        socials={socials}
+        contact={contact}
+      />
     </div>
   );
 }
