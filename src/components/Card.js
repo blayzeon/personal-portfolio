@@ -6,7 +6,7 @@ export default function Card(props) {
     ? props.text
     : "Lorem ipsum dolor sit, amet consectetur.";
   return (
-    <div className="card">
+    <div className="card shadow">
       <div className="card-image"></div>
       <div className="card-text">
         <div className="card-title">
