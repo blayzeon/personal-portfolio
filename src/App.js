@@ -1,5 +1,5 @@
 import "./App.css";
-import Card from "./components/Card";
+import Deck from "./components/Deck";
 import Footer from "./components/Footer";
 
 //  Social media icons require https://devicon.dev/
@@ -37,6 +37,79 @@ const contact = [
   },
 ];
 
+const projects = [
+  {
+    img: "battleship.jpg",
+    title: "Battleship",
+    github: "https://github.com/blayzeon/battleship",
+    demo: "https://blayzeon.github.io/battleship/",
+    text: "Simple battleship game with basic AI and CSS graphics",
+  },
+  {
+    img: "calculator.jpg",
+    title: "Calculator",
+    github: "https://github.com/blayzeon/calculator",
+    demo: "https://blayzeon.github.io/calculator/",
+    text: "Basic calculator with a Windows desktop theme",
+  },
+  {
+    img: "cv.jpg",
+    title: "CV Maker",
+    github: "https://github.com/blayzeon/cv-project",
+    demo: "https://blayzeon.github.io/cv-project/",
+    text: "Resume generator made with React",
+  },
+  {
+    img: "dashboard.jpg",
+    title: "Dashboard",
+    github: "https://github.com/blayzeon/admin-dashboard",
+    demo: "https://blayzeon.github.io/admin-dashboard/",
+    text: "Cat-themed admin dashboard",
+  },
+  {
+    img: "library.jpg",
+    title: "Library",
+    github: "https://github.com/blayzeon/library",
+    demo: "https://blayzeon.github.io/admin-dashboard/",
+    text: "Web app for keeping track of books",
+  },
+  {
+    img: "memory.jpg",
+    title: "Memory Game",
+    github: "https://github.com/blayzeon/memory-card",
+    demo: "https://blayzeon.github.io/memory-card/",
+    text: "Click every card exactly once to win",
+  },
+  {
+    img: "shop.jpg",
+    title: "Shop",
+    github: "https://github.com/blayzeon/shopping-cart",
+    demo: "https://blayzeon.github.io/shopping-cart/",
+    text: "React e-commerce shop demo complete with cart and variations",
+  },
+  {
+    img: "targets.jpg",
+    title: "Target Practice",
+    github: "https://github.com/blayzeon/target-practice",
+    demo: "https://blayzeon.github.io/target-practice/",
+    text: "Simple target practice game made with React",
+  },
+  {
+    img: "todo.jpg",
+    title: "Todo",
+    github: "https://github.com/blayzeon/todo_list",
+    demo: "https://blayzeon.github.io/todo_list/",
+    text: "Sticky note themed todo list app",
+  },
+  {
+    img: "weather.jpg",
+    title: "Weather",
+    github: "https://github.com/blayzeon/weather-app",
+    demo: "https://blayzeon.github.io/weather-app/",
+    text: "Simple weather app using promises",
+  },
+];
+
 function App() {
   return (
     <div className="App">
@@ -63,21 +136,10 @@ function App() {
       </header>
 
       <main className="margin">
-        <h2>Title</h2>
-        <div className="tiled">
-          <Card title="sfsdfdgdssssgdfgdfg" />
-          <Card title="test2" />
-          <Card
-            title="test3"
-            text="dsfsfgdgfd gdsg esdg seg dfgdfg drger4 gsdfges 4rgeg gd fsd gfdg "
-          />
-          <Card title="test4" text="meow meow" />
-          <Card title="test5" text="woof woof" />
-          <Card title="test6" />
-          <Card title="test7" />
-          <Card title="test8" text="mooooo" />
-          <Card title="test9" text="chirp chirp" />
-        </div>
+        <h2>My Work</h2>
+        <section className="tiled">
+          <Deck data={projects} />
+        </section>
       </main>
 
       <Footer
