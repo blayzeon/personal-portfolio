@@ -51,6 +51,7 @@
 }
 
 .portPic > * {
+  user-select: none;
   background-color: var(--shadow);
   border-radius: 1rem;
   font-size: 2rem;
