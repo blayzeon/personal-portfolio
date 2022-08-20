@@ -41,7 +41,9 @@ function App() {
   return (
     <div className="App">
       <header>
-        <div className="curved"></div>
+        <div className="curved">
+          <div></div>
+        </div>
         <div className="shadow">
           <div className="margin flex">
             <div className="portPic shadow">

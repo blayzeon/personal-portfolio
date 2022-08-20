@@ -34,13 +34,21 @@ i {
 .curved {
   display: block;
   position: absolute;
+  display: flex;
+  align-items: end;
+  justify-content: end;
   z-index: -1;
   box-sizing: border-box;
-  min-height: 200px;
+  min-height: 400px;
   width: 100%;
-  padding-bottom: 2rem;
   background-color: var(--primary);
-  clip-path: ellipse(258% 100% at -99.76% 0%);
+}
+
+.curved > div {
+  background-color: white;
+  height: 200px;
+  width: 100%;
+  clip-path: polygon(48% 24%, 100% 0, 100% 100%, 0 100%, 0 61%);
 }
 
 .blurb {
@@ -50,8 +58,6 @@ i {
 }
 
 .portPic {
-  width: 100%;
-  max-width: 400px;
   color: white;
   background-image: url(../public/img/beauty-and-grace.png);
   background-position: center;
