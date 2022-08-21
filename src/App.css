@@ -25,6 +25,7 @@ i,
 
 .App > main {
   flex: 1;
+  min-height: 29.2rem; /* fix for cat gif causing footer gap */
 }
 
 .App > header {
@@ -118,7 +119,8 @@ i,
 }
 
 .App > footer > img {
-  width: 30%;
+  width: clamp(15em, 30vw, 20rem);
+  height: auto;
 }
 
 .icon-pair {
@@ -191,14 +193,9 @@ i,
   header .flex {
     flex-direction: column;
   }
-
-  footer img {
-    width: 80% !important;
-    height: auto;
-  }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
   .flex {
     flex-direction: column;
   }
