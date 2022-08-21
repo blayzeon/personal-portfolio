@@ -188,6 +188,10 @@ i,
     align-items: center !important;
   }
 
+  header .flex {
+    flex-direction: column;
+  }
+
   footer img {
     width: 80% !important;
     height: auto;
