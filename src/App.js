@@ -78,7 +78,7 @@ const projects = [
     img: "library.jpg",
     title: "Library",
     github: "https://github.com/blayzeon/library",
-    demo: "https://blayzeon.github.io/admin-dashboard/",
+    demo: "https://blayzeon.github.io/library/",
     text: "Web app for keeping track of books.",
   },
   {
